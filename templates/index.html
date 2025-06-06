@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Messenger</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="header">
+                <h2>Welcome, <span id="username"></span>!</h2>
+                <button id="logout">Logout</button>
+            </div>
+            <div class="contacts">
+                <h3>Contacts</h3>
+                <ul id="contact-list"></ul>
+            </div>
+        </div>
+        <div class="chat-area">
+            <div class="chat-header">
+                <h3 id="chat-with">Select a contact to chat</h3>
+            </div>
+            <div class="messages" id="messages">
+                <!-- Messages will appear here -->
+            </div>
+            <div class="message-input">
+                <input type="text" id="message-input" placeholder="Type your message..." disabled>
+                <button id="send-button" disabled>Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
